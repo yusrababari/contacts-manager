@@ -1,27 +1,164 @@
-[
-  {
-    "id": 2,
-    "first": "Carson",
-    "last": "Gross",
-    "phone": "123-456-7890",
-    "email": "carson@example.comz",
-    "errors": {}
-  },
-
-  {
-    "id": 19,
-    "first": null,
-    "last": null,
-    "phone": null,
-    "email": "restexample2@example.com",
-    "errors": {}
-  },
-   {
-    "id": 19,
-    "first": null,
-    "last": null,
-    "phone": null,
-    "email": "restexample2@example.com",
-    "errors": {}
-  }
-]
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "email": "alice.johnson@email.com",
+      "phone": "+1-555-234-5678",
+      "company": "Apex Solutions",
+      "jobTitle": "Product Manager",
+      "address": {
+        "street": "42 Maple Avenue",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "73301",
+        "country": "USA"
+      },
+      "tags": ["work", "vip"],
+      "favorite": true,
+      "notes": "Met at TechConf 2024.",
+      "createdAt": "2024-03-15T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "firstName": "Ben",
+      "lastName": "Carter",
+      "email": "ben.carter@webmail.com",
+      "phone": "+1-555-876-5432",
+      "company": "Carter & Co.",
+      "jobTitle": "CEO",
+      "address": {
+        "street": "8 Birchwood Drive",
+        "city": "Denver",
+        "state": "CO",
+        "zipCode": "80201",
+        "country": "USA"
+      },
+      "tags": ["business", "partner"],
+      "favorite": false,
+      "notes": "Prefers calls in the morning.",
+      "createdAt": "2024-05-22T11:30:00Z"
+    },
+    {
+      "id": 3,
+      "firstName": "Clara",
+      "lastName": "Nguyen",
+      "email": "clara.nguyen@inbox.net",
+      "phone": "+44-7700-900456",
+      "company": "Bright Spark Media",
+      "jobTitle": "Creative Director",
+      "address": {
+        "street": "15 King Street",
+        "city": "London",
+        "state": "",
+        "zipCode": "EC1A 1BB",
+        "country": "UK"
+      },
+      "tags": ["design", "freelance"],
+      "favorite": true,
+      "notes": "Handles all branding projects.",
+      "createdAt": "2024-07-10T08:45:00Z"
+    },
+    {
+      "id": 4,
+      "firstName": "David",
+      "lastName": "Okafor",
+      "email": "d.okafor@techmail.io",
+      "phone": "+1-555-321-9870",
+      "company": "NovaByte Inc.",
+      "jobTitle": "Software Engineer",
+      "address": {
+        "street": "300 Silicon Way",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94105",
+        "country": "USA"
+      },
+      "tags": ["tech", "work"],
+      "favorite": false,
+      "notes": "Backend specialist, Go & Rust.",
+      "createdAt": "2024-01-08T14:00:00Z"
+    },
+    {
+      "id": 5,
+      "firstName": "Elena",
+      "lastName": "Rossi",
+      "email": "elena.rossi@postale.it",
+      "phone": "+39-06-5678-9012",
+      "company": "Rossi Consulting",
+      "jobTitle": "Financial Analyst",
+      "address": {
+        "street": "Via Roma 22",
+        "city": "Milan",
+        "state": "",
+        "zipCode": "20121",
+        "country": "Italy"
+      },
+      "tags": ["finance", "international"],
+      "favorite": false,
+      "notes": "Works with EU clients.",
+      "createdAt": "2024-09-03T10:15:00Z"
+    },
+    {
+      "id": 6,
+      "firstName": "Frank",
+      "lastName": "Liu",
+      "email": "frank.liu@cloudbase.com",
+      "phone": "+1-555-654-3210",
+      "company": "CloudBase Systems",
+      "jobTitle": "DevOps Lead",
+      "address": {
+        "street": "99 Harbor Blvd",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98101",
+        "country": "USA"
+      },
+      "tags": ["tech", "cloud"],
+      "favorite": true,
+      "notes": "Contact for infrastructure questions.",
+      "createdAt": "2023-11-19T16:20:00Z"
+    },
+    {
+      "id": 7,
+      "firstName": "Grace",
+      "lastName": "Müller",
+      "email": "grace.muller@mailbox.de",
+      "phone": "+49-30-12345678",
+      "company": "Müller & Partner",
+      "jobTitle": "Legal Counsel",
+      "address": {
+        "street": "Hauptstraße 5",
+        "city": "Berlin",
+        "state": "",
+        "zipCode": "10115",
+        "country": "Germany"
+      },
+      "tags": ["legal", "international"],
+      "favorite": false,
+      "notes": "Specialises in IP law.",
+      "createdAt": "2024-02-27T09:30:00Z"
+    },
+    {
+      "id": 8,
+      "firstName": "Hassan",
+      "lastName": "Al-Farsi",
+      "email": "hassan.alfarsi@arabimail.com",
+      "phone": "+971-50-123-4567",
+      "company": "Al-Farsi Group",
+      "jobTitle": "Operations Manager",
+      "address": {
+        "street": "Tower 3, Business Bay",
+        "city": "Dubai",
+        "state": "",
+        "zipCode": "00000",
+        "country": "UAE"
+      },
+      "tags": ["operations", "vip"],
+      "favorite": true,
+      "notes": "Key partner in the MENA region.",
+      "createdAt": "2024-06-14T07:00:00Z"
+    }
+  ]
+}
