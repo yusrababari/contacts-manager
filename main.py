@@ -1,4 +1,4 @@
-# outputs the data from json file which stores data
+# outputs json file which stores data
 import json
 
 with open('data.json', 'r') as file:

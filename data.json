@@ -15,5 +15,13 @@
     "phone": null,
     "email": "restexample2@example.com",
     "errors": {}
+  },
+   {
+    "id": 19,
+    "first": null,
+    "last": null,
+    "phone": null,
+    "email": "restexample2@example.com",
+    "errors": {}
   }
 ]
