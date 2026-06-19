@@ -1,4 +1,4 @@
-// outputs the data from json file
+# outputs the data from json file
 import json
 
 with open('data.json', 'r') as file:
