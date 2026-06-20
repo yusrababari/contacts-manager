@@ -7,3 +7,5 @@ with open('data.json', 'r') as file:
     data = json.load(file)
 
 print(json.dumps(data, indent=4))#outputs json file which stores data
+
+print(jmespath.search('people[?age > `20`].{"name":name, "age": age}', data)) 
