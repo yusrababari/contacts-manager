@@ -1,9 +1,10 @@
 # https://medium.com/toyota-connected-india/a-gentle-introduction-to-jmespath-an-intuitive-way-to-parse-json-documents-daa6d699467a - json tutorial
+
 import json      # outputs json file which stores data
 import jmespath  # jmespath used to search through data
 
 
-with open('data.json', 'r') as file:
+with open('data.json', 'r') as file: # r means read-only
     data = json.load(file)
 
 results = jmespath.search('contacts[?age > `20`].[firstName, lastName]', data)# searches through contacts and returns the first and last name of anyone older than 20
