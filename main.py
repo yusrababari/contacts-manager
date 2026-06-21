@@ -13,8 +13,7 @@ with open('data.json', 'r') as file: # r means read-only
 
 #print(names)
 
-results = jmespath.search('contacts[?age > `20`].[firstName, lastName]', data)# searches through contacts and returns the first and last name of anyone older than 20
+results = jmespath.search('contacts[?age > `20`].[age]', data)# searches through contacts and returns the age of anyone older than 20
 
-names = [f"{first} {last}" for first, last in results]# loops through results and combines each first and last name into a single string
-
+names = [f"{age} " for age in results] #return age
 print(names)
