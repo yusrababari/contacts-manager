@@ -14,4 +14,3 @@ names = [f"{first} {last}" for first, last in results]# loops through results an
 print(names)
 
 
-#Wrap JSON file in an exception handler
