@@ -7,10 +7,14 @@ import jmespath  # jmespath used to search through data using 'python -m pip ins
 with open('data.json', 'r') as file: # r means read-only
     data = json.load(file)
 
+#results = jmespath.search('contacts[?age > `20`].[firstName, lastName]', data)# searches through contacts and returns the first and last name of anyone older than 20
+
+#names = [f"{first} {last}" for first, last in results]# loops through results and combines each first and last name into a single string
+
+#print(names)
+
 results = jmespath.search('contacts[?age > `20`].[firstName, lastName]', data)# searches through contacts and returns the first and last name of anyone older than 20
 
 names = [f"{first} {last}" for first, last in results]# loops through results and combines each first and last name into a single string
 
 print(names)
-
-
