@@ -16,4 +16,4 @@ with open('data.json', 'r') as file: # r means read-only
 results = jmespath.search('contacts[?age > `20`].[age]', data)# searches through contacts and returns the age of anyone older than 20
 
 names = [f"{age} " for age in results] #return age
-print("Names: " + names)
+print("Names: " + ",".join(names))
