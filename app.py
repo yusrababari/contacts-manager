@@ -2,7 +2,25 @@
 
 import json      # outputs json file which stores data
 import jmespath  # jmespath used to search through data using 'python -m pip install jmespath'
+from flask import Flask, request, jsonify, send_from_directory
 
+app = Flask(__name__, static_folder="static")
+
+
+
+@app.route("/")
+def serve_index():
+    return send_from_directory("static", "index.html")
+
+@app.route("/api/run", methods=["POST"])
+def run_script():
+    data = request.get_json()
+    user_input = data.get("input", "")
+    result = process_data(user_input)
+    return jsonify({"result": result})
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5000)
 
 with open('data.json', 'r') as file: # r means read-only
     data = json.load(file)
